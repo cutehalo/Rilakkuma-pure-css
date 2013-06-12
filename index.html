@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Rilakkuma - demo by cutehalo</title>
+    <style type="text/css">
+    body {
+        margin: 0px;
+        background:#EBE2CE;
+    }
+    .Canvas {
+        top:100px;
+        position:relative;
+        width:102px;
+        z-index:-111;
+        margin:0 auto;
+    }
+    .Head {
+        border:1px solid #960;
+        border-radius:5px;
+        width:100px;
+        height:100px;
+        background:#C47E04;
+        position:relative;
+        -webkit-box-shadow: 0px 2px 3px #630;
+        z-index:3;
+        display:block;
+    }
+    .eyeLtop {
+        border:0;
+        border-radius:16px;
+        width:16px;
+        height:16px;
+        background:#633C2D;
+        position:absolute;
+        left:5px;
+        top:36px;
+        z-index:2;
+    }
+    .eyeRtop {
+        border:0;
+        border-radius:16px;
+        width:16px;
+        height:16px;
+        background:#633C2D;
+        position:absolute;
+        right:5px;
+        top:36px;
+        z-index:2;
+    }
+    .mouth-block{
+        width: 50px;
+        height: 35px;
+        margin: 0 auto;
+        margin-top: 40px;
+        background: white;
+        border-radius: 20px 20px 10px 10px;
+        position: relative;
+    }
+    .mouth {
+        border: 0;
+        border-radius: 11px;
+        width: 11px;
+        height: 11px;
+        background: #633C2D;
+        z-index: 2;
+        position: absolute;
+        left: 20px;
+        color: #500;
+        font-size: 25px;
+        font-family: verdana;
+        text-align: center;
+        margin: 0 auto;
+        top: 10px;
+    }
+    .mouthL{
+        height: 5px;
+        width: 10px;
+        border-radius: 4px 0 0 4px;
+        background: #633C2D;
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        -webkit-transform: rotate(-35deg);
+    }
+    .mouthR{
+        height: 5px;
+        width: 10px;
+        border-radius: 0 4px 4px 0;
+        background: #633C2D;
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        -webkit-transform: rotate(35deg);
+    }
+    </style>
+</head>
+<body>
+
+<div class="Canvas">
+    <div class="Head">
+        <div class="eyeLtop"></div>
+        <div class="eyeRtop"></div>
+        <div class="mouth-block">
+            <div class="mouth"></div>
+            <div class="mouthL"></div>
+            <div class="mouthR"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
